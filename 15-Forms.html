@@ -1,0 +1,41 @@
+<!--FORMS
+    Capturar dados de entrada
+    Input -> Entrada
+
+    Action -> define qual URL sera enviado os dados, vazio envia para mesma URL
+    Method
+        GET
+        POST
+-->
+<h1>Digite Seus dados</h1>
+
+<form action="" method="get">
+    <label>
+        rua
+    <input type="text" name="rua" autocomplete="street-address">
+    </label>
+
+        <label>
+        Número
+    <input type="text" name="numero" autocomplete="address-level3">
+    </label>
+
+    <label>
+        E-mail
+    <input type="text" name="E-mail" autocomplete="email">
+    </label>
+
+    <label>
+        Arquivo
+    <input type="file" name="arquivo">
+    </label>
+
+    <button type="reset"> Reset</button>
+    <button type="submit">Enviar dados</button>
+
+</form>
+<!--Metodo - Action - qual a ação deve ser toamada com o formulario
+    Metodo - method - GET - envio da URL - para o servidor - Apresenta os dados na URL
+    Metodo - post - Envio escondido dos dados (EX: cartao de credito) - Não mostra na url
+    Metodo - Enctype = "multipart/form-data" -  envia de arquivo pelo formulario
+-->
